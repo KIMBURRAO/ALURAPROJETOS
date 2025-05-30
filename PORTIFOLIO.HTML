@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Joaquim</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
+
+    :root {
+      --cor-fundo: #f4f6f8;
+      --cor-primaria: #1B3B5F;
+      --cor-secundaria: #F29F05;
+      --cor-texto: #2c3e50;
+    }
+
+    body {
+      font-family: 'Chakra Petch', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2 {
+      color: var(--cor-primaria);
+      font-weight: 700;
+    }
+
+    .lead {
+      color: var(--cor-secundaria);
+      font-weight: 500;
+    }
+
+    .card-title {
+      color: var(--cor-primaria);
+    }
+
+    .btn-primary {
+      background-color: var(--cor-secundaria);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #d38804;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joaquim</h1>
+    <p class="lead">Aluno do 3º ano do Ensino Médio</p>
+    <p>Estutande de programação,pela plataforma do alura fornecida pelo governo, na escola E.E Fortaleza II, durante o período noturno</p>
+  </header>
+
+  <main class="container">
+    <h2 class="mb-4">Projeto em destaque</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+            <h5 class="card-title">Jogo de Corrida</h5>
+            <p class="card-text">Um jogo de corrida comandado pelo seu teclado.</p>
+            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalProjeto">Ver mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="modal fade" id="modalProjeto" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Jogo de Corrida</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Esse projeto é um jogo de corrida feito com a biblioteca p5.js, onde você controla o carro usando o teclado. É uma experiência divertida para aprender lógica de programação e interação com o usuário.</p>
+          <p>Você pode acessar e jogar diretamente pelo navegador no link abaixo.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001137779238sp/full/wmFV14cwz" class="btn btn-primary" target="_blank">Jogar agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
